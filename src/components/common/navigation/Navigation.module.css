@@ -1,0 +1,17 @@
+/* styles.css */
+.custom-hover {
+  color: white; /* Color de texto normal */
+  text-decoration: none !important; /* Eliminar subrayado de enlace */
+  transition: color 0.3s, text-shadow 0.3s, box-shadow 0.3s; /* Transiciones */
+  text-shadow: 0 0 0 transparent; /* Sombra de texto transparente */
+  /* box-shadow: 0 1px 0 transparent; Sombra debajo del texto transparente */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5), 0 0 12px rgba(0, 123, 255, 0.3);
+  /* border-radius: 50%; Hacer la sombra circular */
+}
+
+.custom-hover:hover {
+  color: #1d1f21; /* Cambiar el color de texto al pasar el cursor */
+  text-shadow: 0 0 4px rgba(36, 38, 40, 0.7); /* Agregar sombra de texto al pasar el cursor */
+  /* box-shadow: 0 4px 8px rgba(5, 31, 88, 0.815); Agregar sombra debajo del texto al pasar el cursor */
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.7), 0 0 16px rgba(0, 123, 255, 0.5);
+}
