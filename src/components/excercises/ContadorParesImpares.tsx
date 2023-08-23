@@ -1,5 +1,20 @@
 import React, { useState } from 'react';
 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/esm/Button';
+
+enum TipoContador {
+  Par = "par",
+  Impar = "impar",
+}
+
+interface Rango {
+    inicio: number;
+    fin: number
+}
+
 const EvenOddCounter: React.FC = () => {
     const [start, setStart] = useState<number | ''>('');
     const [end, setEnd] = useState<number | ''>('');
@@ -12,7 +27,7 @@ const EvenOddCounter: React.FC = () => {
             alert('Por favor, ingrese ambos extremos del rango.');
             return;
         }
-
+        // console.log('El start dentro del coutnEvenOdd: ', start)
         const startValue = parseInt(start as string);
         const endValue = parseInt(end as string);
 
@@ -38,16 +53,16 @@ const EvenOddCounter: React.FC = () => {
     };
 
     return (
-        <div className="container mt-5">
-        <div className="row">
-            <div className="col-md-6 mx-auto">
+        <Container className="mt-5">
+        <Row className="">
+            <Col className="col-md-6 mx-auto">
             <h2>Contador de Números Pares e Impares</h2>
             <div className="form-group">
                 <input
                     type="text"
                     className="form-control"
                     placeholder="Ingrese el extremo inicial del rango"
-                    value={start}
+                    value={ start }
                     onChange={(e) => setStart(e.target.value)}
                 />
             </div>
@@ -68,9 +83,9 @@ const EvenOddCounter: React.FC = () => {
                     Resultado: Números Pares: {evenCount}, Números Impares: {oddCount}
                 </div>
             )}
-            </div>
-        </div>
-        </div>
+            </Col>
+        </Row>
+        </Container>
     );
 };
 
