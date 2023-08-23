@@ -27,7 +27,7 @@ const CalculatorForm: React.FC = () => {
     // Estados para los valores de los inputs, la operación seleccionada y el resultado
     const [value1, setValue1] = useState<number | ''>('');
     const [value2, setValue2] = useState<number | ''>('');
-    const [selectedOperation, setSelectedOperation] = useState<string>(Operation.ADD);
+    const [selectedOperation, setSelectedOperation] = useState<string>('add');
     const [result, setResult] = useState<number | null>(null);
 
     // Función para manejar el cambio en los inputs
@@ -45,7 +45,7 @@ const CalculatorForm: React.FC = () => {
 
             if (isNaN(parsedValue)) {
                 console.log("El valor no es un número válido");
-                return
+                return;
             }
 
             inputName === 'value1' ? setValue1(parsedValue) : setValue2(parsedValue);
@@ -67,20 +67,20 @@ const CalculatorForm: React.FC = () => {
             return;
         }
 
-        const num1 = parseFloat(value1 as string);
-        const num2 = parseFloat(value2 as string);
+        const num1 = value1;
+        const num2 = value2;
 
         switch (selectedOperation) {
-        case 'add':
+        case Operation.ADD:
             setResult(num1 + num2);
             break;
-        case 'subtract':
+        case Operation.SUBTRACT:
             setResult(num1 - num2);
             break;
-        case 'multiply':
+        case Operation.MULTIPLY:
             setResult(num1 * num2);
             break;
-        case 'divide':
+        case Operation.DIVIDE:
             if (num2 === 0) {
                 setResult(null);
             } else {

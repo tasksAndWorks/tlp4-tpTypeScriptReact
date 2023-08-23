@@ -13,6 +13,7 @@ import './App.css'
 //Custom components
 import { Navigation } from "./components/common/navigation/Navigation";
 import CalculatorForm from "./components/excercises/CalculadoraSimple2";
+import EvenOddCounter from "./components/excercises/ContadorParesImpares";
 
 
 
@@ -35,7 +36,7 @@ function App() {
       case Option.Option1:
         return <CalculatorForm/>;
       case Option.Option2:
-        return;
+        return <EvenOddCounter/>;
       default:
         return <div></div>;
     }
@@ -57,6 +58,7 @@ function App() {
               >
                 <option value="">Selecciona una funcionalidad... 🔣</option>
                 <option value={Option.Option1}>Calculadora Simple</option>
+                <option value={Option.Option2}>Contador Pares/Impares</option>
               </select>
             </Col>
           </Row>
@@ -65,7 +67,7 @@ function App() {
           </Row>
         </Container>
       </main>
-      <footer className="py-5 bg-dark fixed">
+      <footer className="py-5 bg-dark">
         <Container className="px-4">
           <p className="text-center text-white">
             Copyright &copy; MARnVEL 2023
