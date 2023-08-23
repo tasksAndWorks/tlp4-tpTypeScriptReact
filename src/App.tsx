@@ -12,7 +12,8 @@ import './App.css'
 
 //Custom components
 import { Navigation } from "./components/common/navigation/Navigation";
-import { CalculadoraSimple } from "./components/excercises/CalculadoraSimple";
+import CalculatorForm from "./components/excercises/CalculadoraSimple2";
+
 
 
 
@@ -32,7 +33,7 @@ function App() {
   const renderModelComponent = () => {
     switch (selectedOption) {
       case Option.Option1:
-        return <CalculadoraSimple/>;
+        return <CalculatorForm/>;
       case Option.Option2:
         return;
       default:
