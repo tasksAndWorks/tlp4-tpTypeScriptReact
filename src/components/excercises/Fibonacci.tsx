@@ -1,5 +1,13 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/esm/Button';
+
+//Imponts
+
 
 const FibonacciSequence: React.FC = () => {
     const [n, setN] = useState<number | ''>('');
@@ -40,11 +48,11 @@ const FibonacciSequence: React.FC = () => {
     };
 
     return (
-        <div className="container mt-5">
-            <div className="row">
-                <div className="col-md-6 mx-auto">
+        <Container className="my-5">
+            <Row className="">
+                <Col className="col-md-6 mx-auto">
                     <h2>Secuencia de Fibonacci</h2>
-                    <div className="form-group">
+                    <div className="form-group mb-2">
                         <input
                             type="text"
                             className="form-control"
@@ -53,9 +61,12 @@ const FibonacciSequence: React.FC = () => {
                             onChange={(e) => setN(e.target.value)}
                         />
                     </div>
-                    <button className="btn btn-primary" onClick={calculateFibonacci}>
+                    <Button
+                        className="btn-primary btn-outline-danger text-white fw-bold border border-black"
+                        onClick={calculateFibonacci}
+                    >
                         Calcular Sucesión
-                    </button>
+                    </Button>
                     {errorMessage && (
                         <div className="alert alert-danger mt-3">{errorMessage}</div>
                     )}
@@ -65,9 +76,9 @@ const FibonacciSequence: React.FC = () => {
                             {fibonacciNumbers.join(', ')}
                         </div>
                     )}
-                </div>
-            </div>
-        </div>
+                </Col>
+            </Row>
+        </Container>
     );
 };
 

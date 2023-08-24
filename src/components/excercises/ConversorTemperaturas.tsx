@@ -1,5 +1,10 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/esm/Button';
 
 enum ConversionType {
   CelsiusToFahrenheit = 'Celsius to Fahrenheit',
@@ -48,9 +53,9 @@ const TemperatureConverter: React.FC = () => {
     };
 
     return (
-        <div className="container mt-5">
-            <div className="row">
-                <div className="col-md-6 mx-auto">
+        <Container className="mt-5">
+            <Row className="">
+                <Col className="col-md-6 mx-auto">
                     <h2>Conversor de Temperatura</h2>
                     <div className="form-group">
                         <select
@@ -75,9 +80,9 @@ const TemperatureConverter: React.FC = () => {
                             onChange={(e) => setValue(e.target.value)}
                         />
                     </div>
-                    <button className="btn btn-primary" onClick={convertTemperature}>
+                    <Button className="btn-primary btn-outline-danger text-white fw-bold border border-black" onClick={convertTemperature}>
                         Hacer Conversión
-                    </button>
+                    </Button>
                     {errorMessage && (
                         <div className="alert alert-danger mt-3">{errorMessage}</div>
                     )}
@@ -86,9 +91,9 @@ const TemperatureConverter: React.FC = () => {
                             Resultado: {result.toFixed(2)}
                         </div>
                     )}
-                </div>
-            </div>
-        </div>
+                </Col>
+            </Row>
+        </Container>
     );
 };
 

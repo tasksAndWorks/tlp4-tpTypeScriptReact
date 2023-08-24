@@ -6,8 +6,8 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/esm/Button';
 
 enum TipoContador {
-  Par = "par",
-  Impar = "impar",
+    Par = "par",
+    Impar = "impar",
 }
 
 interface Rango {
