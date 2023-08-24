@@ -14,6 +14,7 @@ import './App.css'
 import { Navigation } from "./components/common/navigation/Navigation";
 import CalculatorForm from "./components/excercises/CalculadoraSimple2";
 import EvenOddCounter from "./components/excercises/ContadorParesImpares";
+import FibonacciSequence from "./components/excercises/Fibonacci";
 
 
 
@@ -21,7 +22,10 @@ import EvenOddCounter from "./components/excercises/ContadorParesImpares";
 enum Option {
   Option1 = 'Option1',
   Option2 = 'Option2',
-}
+  Option3 = 'Option3',
+  Option4 = 'Option4',
+  Option5 = 'Option5'
+};
 
 
 function App() {
@@ -37,6 +41,12 @@ function App() {
         return <CalculatorForm/>;
       case Option.Option2:
         return <EvenOddCounter/>;
+      case Option.Option3:
+        return <FibonacciSequence/>
+      case Option.Option4:
+        return <h1>Otra operación</h1>
+      case Option.Option5:
+        return <h1>Otra operación</h1>
       default:
         return <div></div>;
     }
@@ -59,11 +69,14 @@ function App() {
                 <option value="">Selecciona una funcionalidad... 🔣</option>
                 <option value={Option.Option1}>Calculadora Simple</option>
                 <option value={Option.Option2}>Contador Pares/Impares</option>
+                <option value={Option.Option3}>Secuencia de Fibonacci</option>
+                <option value={Option.Option4}>Otro</option>
+                <option value={Option.Option5}>Otr</option>
               </select>
             </Col>
           </Row>
           <Row className="mt-5">
-            <Col>{renderModelComponent()}</Col>
+            <Col className="bg-info">{renderModelComponent()}</Col>
           </Row>
         </Container>
       </main>

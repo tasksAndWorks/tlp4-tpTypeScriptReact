@@ -94,7 +94,7 @@ const CalculatorForm: React.FC = () => {
     };
 
     return (
-        <Container className="mt-5">
+        <Container className="my-5">
             <Row className="row">
                 <Col className="col-md-6 mx-auto">
                     <h2 className='text-center text-info-emphasis rounded-3 text-bg-info p-3'>Calculadora</h2>
