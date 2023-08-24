@@ -21,7 +21,20 @@ const FibonacciSequence: React.FC = () => {
             return;
         }
 
-        const nValue = parseInt(n as string);
+        /*
+        const parsedValue = parseInt(n);
+
+        if (isNaN(parsedValue)) {
+            console.log("El valor no es un número válido");
+            return;
+        }
+        */
+
+        // console.log('El n dentro del calculateFib: ', n);
+        // console.log(typeof n);
+        const nValue =Number(n);
+        // console.log('El nValue dentro del Fib: ', nValue);
+        // console.log('El tipo del nValue dentro del Fib: ', typeof nValue);
 
         if (isNaN(nValue) || nValue < 1) {
             // Validar que el valor ingresado sea un número entero positivo
@@ -61,12 +74,14 @@ const FibonacciSequence: React.FC = () => {
                             onChange={(e) => setN(e.target.value)}
                         />
                     </div>
-                    <Button
-                        className="btn-primary btn-outline-danger text-white fw-bold border border-black"
-                        onClick={calculateFibonacci}
-                    >
-                        Calcular Sucesión
-                    </Button>
+                    <div className="mt-2 d-flex justify-content-center">
+                        <Button
+                            className="btn-primary btn-outline-danger text-white fw-bold border border-black"
+                            onClick={calculateFibonacci}
+                        >
+                            Calcular Sucesión
+                        </Button>
+                    </div>
                     {errorMessage && (
                         <div className="alert alert-danger mt-3">{errorMessage}</div>
                     )}
