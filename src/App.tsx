@@ -78,7 +78,7 @@ function App() {
             </Col>
           </Row>
           <Row className="mt-5">
-            <Col className="bg-info">{renderModelComponent()}</Col>
+            <Col className="bg-info rounded-3">{renderModelComponent()}</Col>
           </Row>
         </Container>
       </main>

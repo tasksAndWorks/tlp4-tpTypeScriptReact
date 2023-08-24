@@ -53,11 +53,13 @@ const EvenOddCounter: React.FC = () => {
     };
 
     return (
-        <Container className="mt-5">
+        <Container className="my-5">
         <Row className="">
             <Col className="col-md-6 mx-auto">
-            <h2>Contador de Números Pares e Impares</h2>
-            <div className="form-group">
+            <h2 className='text-center text-dark rounded-3 p-3'>
+                Contador de Números Pares e Impares
+            </h2>
+            <div className="form-group mb-2">
                 <input
                     type="text"
                     className="form-control"
@@ -66,7 +68,7 @@ const EvenOddCounter: React.FC = () => {
                     onChange={(e) => setStart(e.target.value)}
                 />
             </div>
-            <div className="form-group">
+            <div className="form-group mb-2">
                 <input
                     type="text"
                     className="form-control"
@@ -75,9 +77,11 @@ const EvenOddCounter: React.FC = () => {
                     onChange={(e) => setEnd(e.target.value)}
                 />
             </div>
-            <button className="btn btn-primary" onClick={countEvenOdd}>
-                Calcular Cantidad Pares e Impares
-            </button>
+            <div className="mt-2 d-flex justify-content-center">
+                <button className="btn btn-primary" onClick={countEvenOdd}>
+                    Calcular Cantidad Pares e Impares
+                </button>
+            </div>
             {evenCount !== null && oddCount !== null && (
                 <div className="alert alert-success mt-3">
                     Resultado: Números Pares: {evenCount}, Números Impares: {oddCount}

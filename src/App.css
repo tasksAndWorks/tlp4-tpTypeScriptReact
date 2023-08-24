@@ -3,5 +3,7 @@ body {
     padding: 0; /* Elimina el relleno predeterminado */
     /* background: linear-gradient(to bottom, #ccc, #f5f5dc); Gris a beige */
     background-size: 100vh; /* Evita la repetición del fondo */
-    background-color: rgba(255, 255, 255, 0.87);
+    /* background-color: rgba(255, 255, 255, 0.87); */
+    background: rgb(133,190,218);
+    background: radial-gradient(circle, rgba(133,190,218,1) 0%, rgba(201,205,207,1) 100%, rgba(207,207,201,1) 100%, rgba(238,174,202,1) 100%); 
 }

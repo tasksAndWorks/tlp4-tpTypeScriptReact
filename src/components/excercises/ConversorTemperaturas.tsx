@@ -7,17 +7,17 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/esm/Button';
 
 enum ConversionType {
-  CelsiusToFahrenheit = 'Celsius to Fahrenheit',
-  FahrenheitToCelsius = 'Fahrenheit to Celsius',
+    CelsiusToFahrenheit = 'Celsius to Fahrenheit',
+    FahrenheitToCelsius = 'Fahrenheit to Celsius',
 }
 
 const TemperatureConverter: React.FC = () => {
-  const [value, setValue] = useState<number | ''>('');
-  const [conversionType, setConversionType] = useState<ConversionType>(
-    ConversionType.CelsiusToFahrenheit
-  );
-  const [result, setResult] = useState<number | null>(null);
-  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+    const [value, setValue] = useState<number | ''>('');
+    const [conversionType, setConversionType] = useState<ConversionType>(
+        ConversionType.CelsiusToFahrenheit
+    );
+    const [result, setResult] = useState<number | null>(null);
+    const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
     const convertTemperature = () => {
         if (value === '') {
@@ -53,11 +53,13 @@ const TemperatureConverter: React.FC = () => {
     };
 
     return (
-        <Container className="mt-5">
+        <Container className="my-5">
             <Row className="">
                 <Col className="col-md-6 mx-auto">
-                    <h2>Conversor de Temperatura</h2>
-                    <div className="form-group">
+                    <h2 className='text-center text-dark rounded-3 p-3'>
+                        Conversor de Temperatura
+                    </h2>
+                    <div className="form-group mb-2">
                         <select
                             className="form-control"
                             value={conversionType}
@@ -71,7 +73,7 @@ const TemperatureConverter: React.FC = () => {
                             </option>
                         </select>
                     </div>
-                    <div className="form-group">
+                    <div className="form-group mb-2">
                         <input
                             type="text"
                             className="form-control"
@@ -80,9 +82,11 @@ const TemperatureConverter: React.FC = () => {
                             onChange={(e) => setValue(e.target.value)}
                         />
                     </div>
-                    <Button className="btn-primary btn-outline-danger text-white fw-bold border border-black" onClick={convertTemperature}>
-                        Hacer Conversión
-                    </Button>
+                    <div className="mt-2 d-flex justify-content-center">
+                        <Button className="btn-primary btn-outline-danger text-white fw-bold border border-black" onClick={convertTemperature}>
+                            Hacer Conversión
+                        </Button>
+                    </div>
                     {errorMessage && (
                         <div className="alert alert-danger mt-3">{errorMessage}</div>
                     )}
