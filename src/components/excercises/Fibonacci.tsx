@@ -88,7 +88,7 @@ const FibonacciSequence: React.FC = () => {
                     {fibonacciNumbers.length > 0 && (
                         <div className="alert alert-success mt-3">
                             Primeros {n} números de la secuencia de Fibonacci:{' '}
-                            {fibonacciNumbers.join(', ')}
+                            {`{ ${fibonacciNumbers.join(', ')} }`}
                         </div>
                     )}
                 </Col>

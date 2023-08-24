@@ -68,10 +68,10 @@ function App() {
                 onChange={handleSelectChange}
                 value={selectedOption || ''}
               >
-                <option value="">Selecciona una funcionalidad... 🔣</option>
+                <option value="">Selecciona una funcionalidad... ⚙ 💻</option>
                 <option value={Option.Option1}>Calculadora Simple</option>
                 <option value={Option.Option2}>Contador Pares/Impares</option>
-                <option value={Option.Option3}>Secuencia de Fibonacci</option>
+                <option value={Option.Option3}>Sucesión de Fibonacci</option>
                 <option value={Option.Option4}>Conversor de Temperaturas</option>
                 <option value={Option.Option5}>Contador de Palabras</option>
               </select>
