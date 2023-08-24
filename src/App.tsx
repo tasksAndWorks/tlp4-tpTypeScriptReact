@@ -15,6 +15,8 @@ import { Navigation } from "./components/common/navigation/Navigation";
 import CalculatorForm from "./components/excercises/CalculadoraSimple2";
 import EvenOddCounter from "./components/excercises/ContadorParesImpares";
 import FibonacciSequence from "./components/excercises/Fibonacci";
+import TemperatureConverter from "./components/excercises/ConversorTemperaturas";
+import WordCounter from "./components/excercises/ContadorPalabras";
 
 
 
@@ -25,7 +27,7 @@ enum Option {
   Option3 = 'Option3',
   Option4 = 'Option4',
   Option5 = 'Option5'
-};
+}
 
 
 function App() {
@@ -44,9 +46,9 @@ function App() {
       case Option.Option3:
         return <FibonacciSequence/>
       case Option.Option4:
-        return <h1>Otra operación</h1>
+        return <TemperatureConverter/>
       case Option.Option5:
-        return <h1>Otra operación</h1>
+        return <WordCounter/>
       default:
         return <div></div>;
     }
@@ -70,8 +72,8 @@ function App() {
                 <option value={Option.Option1}>Calculadora Simple</option>
                 <option value={Option.Option2}>Contador Pares/Impares</option>
                 <option value={Option.Option3}>Secuencia de Fibonacci</option>
-                <option value={Option.Option4}>Otro</option>
-                <option value={Option.Option5}>Otr</option>
+                <option value={Option.Option4}>Conversor de Temperaturas</option>
+                <option value={Option.Option5}>Contador de Palabras</option>
               </select>
             </Col>
           </Row>
