@@ -14,7 +14,9 @@ const WordCounter: React.FC = () => {
     <div className="container my-5">
       <div className="row">
         <div className="col-md-6 mx-auto">
-          <h2 className='text-center text-dark rounded-3 p-3'>Contador de Palabras</h2>
+          <h2 className='text-center text-dark rounded-3 p-3'>
+            Contador de Palabras
+          </h2>
           <div className="form-group mb-1">
             <textarea
               className="form-control"

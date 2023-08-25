@@ -22,11 +22,11 @@ import WordCounter from "./components/excercises/ContadorPalabras";
 
 
 enum Option {
-  Option1 = 'Option1',
-  Option2 = 'Option2',
-  Option3 = 'Option3',
-  Option4 = 'Option4',
-  Option5 = 'Option5'
+  Option1 = 'Calculadora Simple',
+  Option2 = 'Contador Pares/Impares',
+  Option3 = 'Sucesión de Fibonacci',
+  Option4 = 'Conversor de Temperaturas',
+  Option5 = 'Contador de Palabras'
 }
 
 
@@ -89,8 +89,6 @@ function App() {
           </p>
         </Container>
       </footer>
-
-
     </div>
   )
 }
