@@ -3,7 +3,7 @@ This repo was created to address some practical questions about TypeScript posed
 It is a simple web app made with the framework **Vite** using **React** and **TypeScript**.
 
 *Este repositorio fue creado para abordar algunas preguntas prácticas sobre TypeScript planteadas por la clase 'Taller de Lenguajes de Programación IV'*.
-*Es una simple aplicación de tareas hecha con el framework **Vite** utilizando **React** y **TypeScript***.
+*Es una simple aplicación web hecha con el framework **Vite** utilizando **React** y **TypeScript***.
 
 ## Tecnologías utilizadas:
 <div align="center" style="display: flex">
