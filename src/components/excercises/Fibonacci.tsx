@@ -64,14 +64,16 @@ const FibonacciSequence: React.FC = () => {
         <Container className="my-5">
             <Row className="">
                 <Col className="col-md-6 mx-auto">
-                    <h2>Secuencia de Fibonacci</h2>
+                    <h2 className='text-center text-dark rounded-3 p-3'>
+                        Sucesión de Fibonacci
+                    </h2>
                     <div className="form-group mb-2">
                         <input
                             type="text"
                             className="form-control"
                             placeholder="Ingrese un número (N)"
                             value={n}
-                            onChange={(e) => setN(e.target.value)}
+                            onChange={(e) => setN(parseInt(e.target.value))}
                         />
                     </div>
                     <div className="mt-2 d-flex justify-content-center">
@@ -87,8 +89,8 @@ const FibonacciSequence: React.FC = () => {
                     )}
                     {fibonacciNumbers.length > 0 && (
                         <div className="alert alert-success mt-3">
-                            Primeros {n} números de la secuencia de Fibonacci:{' '}
-                            {fibonacciNumbers.join(', ')}
+                            Primeros {n} números de la sucesión de Fibonacci:{' '}
+                            {`{ ${fibonacciNumbers.join(', ')} }`}
                         </div>
                     )}
                 </Col>

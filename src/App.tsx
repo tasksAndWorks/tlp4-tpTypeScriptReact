@@ -22,11 +22,11 @@ import WordCounter from "./components/excercises/ContadorPalabras";
 
 
 enum Option {
-  Option1 = 'Option1',
-  Option2 = 'Option2',
-  Option3 = 'Option3',
-  Option4 = 'Option4',
-  Option5 = 'Option5'
+  Option1 = 'Calculadora Simple',
+  Option2 = 'Contador Pares/Impares',
+  Option3 = 'Sucesión de Fibonacci',
+  Option4 = 'Conversor de Temperaturas',
+  Option5 = 'Contador de Palabras'
 }
 
 
@@ -68,10 +68,10 @@ function App() {
                 onChange={handleSelectChange}
                 value={selectedOption || ''}
               >
-                <option value="">Selecciona una funcionalidad... 🔣</option>
+                <option value="">Selecciona una funcionalidad... ⚙ 💻</option>
                 <option value={Option.Option1}>Calculadora Simple</option>
                 <option value={Option.Option2}>Contador Pares/Impares</option>
-                <option value={Option.Option3}>Secuencia de Fibonacci</option>
+                <option value={Option.Option3}>Sucesión de Fibonacci</option>
                 <option value={Option.Option4}>Conversor de Temperaturas</option>
                 <option value={Option.Option5}>Contador de Palabras</option>
               </select>
@@ -89,8 +89,6 @@ function App() {
           </p>
         </Container>
       </footer>
-
-
     </div>
   )
 }
