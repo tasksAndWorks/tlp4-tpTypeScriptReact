@@ -15,7 +15,7 @@ export const Navigation = () => {
         className=""
     >
         <Container>
-            <Navbar.Brand href="#home" className="d-flex m-0">
+            <Navbar.Brand href="/" className="d-flex m-0">
                 <CommandLineIcon width={35} height={35} className="me-2"/>
                 <p className="fs-4 m-0 fw-bold fst-italic">Home</p>
             </Navbar.Brand>
@@ -23,7 +23,7 @@ export const Navigation = () => {
             <Nav className="d-flex ms-auto">
                 <Nav.Link
                     className={styles["custom-hover"]}
-                    href="#home"
+                    href="https://github.com/MARnVEL"
                 >
                     <p className="fs-6 p-0 m-0 fw-bold">My GitHub</p>
                 </Nav.Link>

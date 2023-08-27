@@ -1,27 +1,78 @@
-# React + TypeScript + Vite
+# TODO App
+This repo was created to address some practical questions about TypeScript posed by the 'Programming Languages Workshop IV' class.
+It is a simple ToDo app made with the framework **Vite** using **React** and **TypeScript**.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*Este repositorio fue creado para abordar algunas preguntas prácticas sobre TypeScript planteadas por la clase 'Taller de Lenguajes de Programación IV'*.
+*Es una simple aplicación de tareas hecha con el framework **Vite** utilizando **React** y **TypeScript***.
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas:
+<div align="center" style="display: flex">
+      <span>
+         <a href="https://es.javascript.info/" target="_blank">
+               <img width="100" style="margin: 10" title='JavaScript' src='https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png'>
+         </a>
+      </span>
+      <span>
+         <a href="https://www.w3schools.com/html/default.asp" title='html' target="_blank">
+               <img width="100" style="margin: 10" title='HTML' src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png'>
+         </a>
+      </span>
+      <span>
+         <a href="https://www.w3schools.com/css/default.asp" title='CSS' target="_blank">
+               <img width="72" style="margin: 10" title='CSS' src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png'>
+         </a>
+      </span>
+      <br/>
+      <span>
+         <a href="https://www.typescriptlang.org/" target="_blank" title='TypeScript'>
+               <img width="100" style="margin: 10" title='TypeScript' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/800px-Typescript.svg.png?20230616215448'>
+         </a>
+      </span>
+      <span>
+         <a href="https://react.dev/" target="_blank" title='React'>
+               <img width="100" style="margin: 10" title='React' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/800px-React-icon.svg.png'>
+         </a>
+      </span>
+      <span>
+         <a href="https://getbootstrap.com/docs/5.3/getting-started/download/" title='Bootstrap 5' target="_blank">
+               <img width="100" style="margin: 10" title='Bootstrap' src='https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png'>
+         </a>
+      </span>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+</div>
 
-## Expanding the ESLint configuration
+#### Para ejecutar o utilizar el proyecto debes clonar este repositorio en un directorio de tu sistema. Abre una terminal y ejecuta el siguiente comando:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+git clone https://github.com/tasksAndWorks/tlp4-tpTypeScriptReact.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### Con una terminal localizarse en el directorio del proyecto y ejecutar:
+```bash
+yarn install
+```
+o
+```bash
+npm install
+```
+
+#### Para ejecutar el proyecto:
+```bash
+yarn dev
+```
+o
+```bash
+npm run dev
+```
+![Pantalla inicial](./public/1.png)
+![Prueba Fibonacci 1](./public/2.png)
+![Prueba Fibonacci 2](./public/3.png)
+![Prueba Calculadora 1](./public/4.png)
+![Prueba Calculadora 2](./public/5.png)
+![Prueba Calculadora 3](./public/6.png)
+![Prueba Calculadora 4](./public/7.png)
+
+
+
+
+
