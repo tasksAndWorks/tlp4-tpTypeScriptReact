@@ -1,6 +1,6 @@
-# TODO App
+# TypeScript App
 This repo was created to address some practical questions about TypeScript posed by the 'Programming Languages Workshop IV' class.
-It is a simple ToDo app made with the framework **Vite** using **React** and **TypeScript**.
+It is a simple web app made with the framework **Vite** using **React** and **TypeScript**.
 
 *Este repositorio fue creado para abordar algunas preguntas prácticas sobre TypeScript planteadas por la clase 'Taller de Lenguajes de Programación IV'*.
 *Es una simple aplicación de tareas hecha con el framework **Vite** utilizando **React** y **TypeScript***.
